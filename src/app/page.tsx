@@ -13,7 +13,6 @@ import Footer from "@/components/Footer"; // Import the footer
 export default function Home() {
     return (
         <div className="min-h-screen bg-white text-gray-900 dark:bg-zinc-950">
-            <Navbar />
             <main>
                 <Hero />
                 <Services />

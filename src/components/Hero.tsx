@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden font-sans bg-black">
-      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/hero.jpg"
@@ -18,12 +17,11 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl w-full px-6 py-24 sm:py-32 lg:px-8 flex flex-col items-center justify-center text-center">
         <div className="max-w-3xl flex flex-col items-center gap-6">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl drop-shadow-md leading-tight">
             To get started, edit the{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">
+            <span className="text-transparent bg-clip-text  from-blue-400 to-teal-400">
               page.tsx
             </span>{" "}
             file.

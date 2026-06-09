@@ -9,8 +9,7 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [isCompact, setIsCompact] = useState(false);
 
-  // Using refs ensures scroll state persists reliably without triggering extra renders
-  const timerRef = useRef(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hasTriggeredRef = useRef(false);
 
   useEffect(() => {
