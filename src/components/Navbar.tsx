@@ -1,8 +1,9 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,12 +51,25 @@ export default function Navbar() {
 
   const menuItems = [
     { label: "হোম", href: "/" },
-    { label: "প্রোডাক্টস +", href: "#products" },
-    { label: "আমাদের সার্ভিস +", href: "#services" },
-    { label: "আমাদের সম্পর্কে", href: "#about" },
-    { label: "পোর্টফলিও", href: "#portfolio" },
-    { label: "ব্লগ", href: "#blog" },
-    { label: "যোগাযোগ", href: "#contact" },
+    { 
+      label: "প্রোডাক্টস", 
+      href: "#products",
+      subItems: [
+        { label: "ই-কমার্স ওয়েবসাইট", href: "/e-commerce-website" },
+        { label: "ইনেভন্টির ম্যােনজেমন্ট", href: "/inventory-management" }
+      ]
+    },
+    { 
+      label: "আমাদের সার্ভিস", 
+      href: "#services",
+      subItems: [
+        { label: "ডিজিটাল মার্কেটিং", href: "/digital-marketing" },
+        { label: "সফটওয়্যার ডেভেলপমেন্ট", href: "/software-development" },
+        { label: "ল্যান্ডিং পেজ সার্ভিস", href: "/landing-page" }
+      ]
+    },
+    { label: "আমাদের সম্পর্কে", href: "/about-us" },
+    { label: "যোগাযোগ", href: "/contact-us" },
   ];
 
   return (
@@ -82,15 +96,29 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-6 text-gray-700 font-medium">
             {menuItems.map((item) => (
-              <Link key={item.label} href={item.href} className="hover:text-blue-600 transition-colors text-sm xl:text-base">
-                {item.label}
-              </Link>
+              <div key={item.label} className="relative group py-6 -my-6 flex items-center">
+                <Link href={item.href} className="hover:text-blue-600 transition-colors text-sm xl:text-base flex items-center gap-1">
+                  {item.label}
+                  {item.subItems && <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />}
+                </Link>
+                {item.subItems && (
+                  <div className="absolute top-full left-0 mt-0 w-64 bg-white border border-gray-100 rounded-b-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left flex flex-col z-50">
+                    <div className="p-2">
+                      {item.subItems.map(sub => (
+                        <Link key={sub.label} href={sub.href} className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-md transition-colors font-medium">
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="#consultation" className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-6 py-2 rounded shadow-md hover:shadow-lg hover:from-blue-800 hover:to-blue-600 transition-all font-medium text-sm">
+            <Link href="/contact-us" className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-6 py-2 rounded shadow-md hover:shadow-lg hover:from-blue-800 hover:to-blue-600 transition-all font-medium text-sm">
               ফর কনসালটেশন
             </Link>
           </div>
@@ -112,11 +140,25 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 px-4 pt-4 pb-6 space-y-3 shadow-inner">
+        <div className="lg:hidden bg-white border-t border-gray-100 px-4 pt-4 pb-6 shadow-inner overflow-y-auto max-h-[80vh]">
           {menuItems.map((item) => (
-            <Link key={item.label} href={item.href} onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-blue-600 font-medium py-2 border-b border-gray-50 last:border-0">
-              {item.label}
-            </Link>
+            <div key={item.label} className="border-b border-gray-50 last:border-0">
+              <div className="flex items-center justify-between">
+                <Link href={item.href} onClick={() => !item.subItems && setIsOpen(false)} className="flex-grow text-gray-700 hover:text-blue-600 font-medium py-3">
+                  {item.label}
+                </Link>
+                {item.subItems && <ChevronDown className="w-5 h-5 text-gray-500" />}
+              </div>
+              {item.subItems && (
+                <div className="pl-4 pb-3 space-y-1 border-l-2 border-blue-100 ml-2">
+                  {item.subItems.map(sub => (
+                    <Link key={sub.label} href={sub.href} onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-blue-600 py-2 text-sm font-medium">
+                      {sub.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       )}
