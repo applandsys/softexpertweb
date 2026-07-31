@@ -2,6 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import { Phone, ArrowRight, CheckCircle2, Shield, Search, Smartphone } from 'lucide-react';
 import Image from 'next/image';
+import localFont from 'next/font/local';
+
+const kalpana = localFont({
+    src: '../../../public/fonts/Kalpana UNICODE.ttf',
+    display: 'swap',
+});
 
 const EcommerceWebsitePage = () => {
     return (
@@ -10,8 +16,8 @@ const EcommerceWebsitePage = () => {
             <section className="bg-gray-50 py-16 px-4 md:px-8">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 items-center">
                     <div className="flex-1 space-y-6">
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                            E-Commerce Website Bangladesh -ই-কমার্স ওয়েবসাইট
+                        <h1 className={`text-3xl md:text-4xl font-bold text-gray-900 leading-tight text-blue-600 ${kalpana.className}`}>
+                            আপনার ব্যবসার  Online সমাধান আমাদের  High Tech E-Commerce
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed">
                             Digital Crop E-Commerce Website বাংলাদেশের Online উদ্যোক্তা, রিটেইল ব্যবসা ও ব্র্যান্ডের জন্য সম্পূর্ণ Digital সমাধান। প্রোডাক্ট লিস্টিং, কার্ট, অর্ডার, পেমেন্ট ও Customer Management সব এক Platform-এ পরিচালনা করুন।
@@ -27,6 +33,20 @@ const EcommerceWebsitePage = () => {
                                 <Phone size={20} />
                                 কল করুন: +88 01993-141214
                             </a>
+                        </div>
+                    </div>
+                    
+                    {/* YouTube Video Section */}
+                    <div className="flex-1 w-full mt-8 md:mt-0">
+                        <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+                            <iframe 
+                                className="absolute top-0 left-0 w-full h-full" 
+                                src="https://www.youtube.com/embed/u5taZdVIHeA" 
+                                title="YouTube video player" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowFullScreen>
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -75,13 +95,52 @@ const EcommerceWebsitePage = () => {
                 </div>
             </section>
 
+            {/* Technologies Section */}
+            <section className="py-16 px-4 md:px-8 bg-white border-t border-gray-100">
+                <div className="max-w-7xl mx-auto text-center">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-8">প্রযুক্তির মাধ্যমে শক্তিশালী সমাধান</h2>
+                    <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                        আমাদের ই-কমার্স প্ল্যাটফর্মটি অত্যাধুনিক প্রযুক্তির উপর ভিত্তি করে তৈরি, যা নিশ্চিত করে সর্বোচ্চ নিরাপত্তা, দ্রুত পারফরম্যান্স এবং চমৎকার ইউজার এক্সপেরিয়েন্স।
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-10 md:gap-16">
+                        <div className="flex flex-col items-center group">
+                            <div className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mb-4 shadow-sm border border-green-100 group-hover:scale-110 transition-transform duration-300">
+                                <span className="text-xl font-bold text-green-600">Node.js</span>
+                            </div>
+                            <h3 className="text-gray-800 font-semibold">Backend</h3>
+                        </div>
+                        
+                        <div className="flex flex-col items-center group">
+                            <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center mb-4 shadow-sm border border-gray-800 group-hover:scale-110 transition-transform duration-300">
+                                <span className="text-xl font-bold text-white">Next.js</span>
+                            </div>
+                            <h3 className="text-gray-800 font-semibold">Frontend</h3>
+                        </div>
+                        
+                        <div className="flex flex-col items-center group">
+                            <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mb-4 shadow-sm border border-blue-100 group-hover:scale-110 transition-transform duration-300">
+                                <span className="text-sm font-bold text-blue-600">PostgreSQL</span>
+                            </div>
+                            <h3 className="text-gray-800 font-semibold">Database</h3>
+                        </div>
+                        
+                        <div className="flex flex-col items-center group">
+                            <div className="w-24 h-24 bg-cyan-50 rounded-full flex items-center justify-center mb-4 shadow-sm border border-cyan-100 group-hover:scale-110 transition-transform duration-300">
+                                <span className="text-xl font-bold text-cyan-600">Tailwind</span>
+                            </div>
+                            <h3 className="text-gray-800 font-semibold">Styling</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Features Grid */}
             <section className="py-16 px-4 md:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">E-Commerce Website Design-এর মূল Features</h2>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { title: "সম্পূর্ণ ডাইনামিক ই-কমার্স সিস্টেম", desc: "ক্যাটাগরি ভিত্তিক প্রোডাক্ট লিস্টিং, উন্নত সার্চ অপশন এবং সহজ ফিল্টার সিস্টেমের মাধ্যমে কাস্টমার খুব দ্রুত পছন্দের পণ্য খুঁজে নিতে পারে।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/business-website.svg" },
@@ -91,7 +150,19 @@ const EcommerceWebsitePage = () => {
                             { title: "অ্যাডমিন ড্যাশবোর্ড", desc: "অ্যাডমিন এক জায়গা থেকেই প্রোডাক্ট, কাস্টমার, অর্ডার এবং ইনভেন্টরি সম্পূর্ণভাবে কন্ট্রোল করতে পারেন।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/healthcare-website.svg" },
                             { title: "রিয়েল-টাইম ডেটা আপডেট", desc: "সব বিক্রয়, অর্ডার ও স্টক সংক্রান্ত তথ্য লাইভ আপডেট হয়, ফলে সবসময় সঠিক ডেটা দেখা যায়।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/restaurant-website.svg" },
                             { title: "পেমেন্ট মডিউল", desc: "বিভিন্ন পেমেন্ট অপশনের মাধ্যমে লেনদেন সম্পন্ন হয় এবং সব পেমেন্ট ও ট্রানজ্যাকশন হিস্ট্রি এক জায়গায় সংরক্ষিত থাকে।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/personal-website.svg" },
-                            { title: "রেসপন্সিভ ডিজাইন", desc: "ওয়েবসাইটটি মোবাইল, ট্যাবলেট ও ডেস্কটপ সব ডিভাইসে সুন্দরভাবে কাজ করে এবং ইউজারদের জন্য স্মুথ অভিজ্ঞতা নিশ্চিত করে।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/custom-website.svg" }
+                            { title: "রেসপন্সিভ ডিজাইন", desc: "ওয়েবসাইটটি মোবাইল, ট্যাবলেট ও ডেস্কটপ সব ডিভাইসে সুন্দরভাবে কাজ করে এবং ইউজারদের জন্য স্মুথ অভিজ্ঞতা নিশ্চিত করে।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/custom-website.svg" },
+                            { title: "Fraud Checking", desc: "নিরাপদ লেনদেন নিশ্চিত করতে স্বয়ংক্রিয় ফ্রড ডিটেকশন ও প্রিভেনশন সিস্টেম।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/business-website.svg" },
+                            { title: "Courier Integration", desc: "জনপ্রিয় কুরিয়ার সার্ভিসের সাথে এপিআই ইন্টিগ্রেশন, ফলে সরাসরি প্যানেল থেকেই পার্সেল বুকিং করা যায়।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/ecommerce-website.svg" },
+                            { title: "Accounts", desc: "আয়-ব্যয়, লাভ-ক্ষতি এবং অন্যান্য আর্থিক হিসাব সহজে পরিচালনা করার জন্য স্বয়ংসম্পূর্ণ একাউন্টিং মডিউল।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/newspaper-website.svg" },
+                            { title: "Inventory", desc: "স্টক ম্যানেজমেন্ট, লো স্টক অ্যালার্ট এবং ইনভেন্টরি ট্র্যাকিং সিস্টেম যা আপনার স্টক সম্পর্কে সবসময় আপডেটেড রাখে।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/education-website.svg" },
+                            { title: "Banner and Promotion", desc: "ওয়েবসাইটের বিভিন্ন স্থানে প্রমোশনাল ব্যানার এবং অফার সেটআপ করার সহজ উপায়।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/healthcare-website.svg" },
+                            { title: "Reports", desc: "সেলস, কাস্টমার, স্টক এবং অন্যান্য গুরুত্বপূর্ণ মেট্রিক্সের বিস্তারিত রিপোর্ট ও অ্যানালিটিক্স।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/restaurant-website.svg" },
+                            { title: "Activity Log", desc: "সিস্টেমে কে কখন কী পরিবর্তন বা আপডেট করেছে তার সম্পূর্ণ ট্র্যাকিং বা অ্যাক্টিভিটি লগ।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/personal-website.svg" },
+                            { title: "Pixel Setup", desc: "ফেসবুক পিক্সেল, গুগল অ্যানালিটিক্স এবং অন্যান্য সোশ্যাল মিডিয়া ট্র্যাকিং টুলস সহজে সেটআপ করার সুবিধা।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/custom-website.svg" },
+                            { title: "Vendor Management", desc: "একাধিক ভেন্ডর যুক্ত করা এবং তাদের সেলস, প্রোডাক্ট ও কমিশন সহজে ম্যানেজ করার সুবিধা।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/business-website.svg" },
+                            { title: "Coupon and Deal", desc: "স্পেশাল অফার, ডিসকাউন্ট এবং কুপন কোড তৈরি করে কাস্টমারদের সহজে আকৃষ্ট করার সিস্টেম।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/ecommerce-website.svg" },
+                            { title: "Brand Manage", desc: "ব্র্যান্ড অনুযায়ী প্রোডাক্ট ক্যাটাগরাইজ করা এবং নির্দিষ্ট ব্র্যান্ডের জন্য আলাদা লিস্টিং তৈরি করার সুবিধা।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/newspaper-website.svg" },
+                            { title: "Multi Level Category", desc: "প্রোডাক্টগুলোকে প্রধান ক্যাটাগরি, সাব-ক্যাটাগরি এবং চাইল্ড ক্যাটাগরিতে বিভক্ত করার অত্যাধুনিক সিস্টেম।", icon: "https://digital-crop.com/wp-content/uploads/2024/05/education-website.svg" }
                         ].map((feat, idx) => (
                             <div key={idx} className="bg-white border border-gray-100 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all text-center group">
                                 <div className="mb-6 flex justify-center">
@@ -125,7 +196,7 @@ const EcommerceWebsitePage = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8">রিয়ে-টাইম ড্যাশবোর্ডে কী কী তথ্য এক নজরে দেখা যাবে</h2>
-                        
+
                         <div>
                             <h3 className="text-xl font-bold mb-2">১. প্রোডাক্ট ম্যানেজমেন্ট</h3>
                             <p className="text-gray-600">ড্যাশবোর্ড থেকেই নতুন প্রোডাক্ট যোগ করা, বিদ্যমান প্রোডাক্ট আপডেট করা এবং প্রয়োজন অনুযায়ী প্রোডাক্ট ডিলিট করা খুব সহজভাবে করা যায়।</p>
@@ -186,7 +257,7 @@ const EcommerceWebsitePage = () => {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900">কিভাবে আমাদের সিস্টেম অনলাইন শপ পরিচালনাকে সহজ করে</h2>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             { step: "01", title: "Product & Category Setup", desc: "অ্যাডমিন ড্যাশবোর্ড থেকে প্রোডাক্ট ও ক্যাটাগরি খুব সহজেই সেটআপ, আপডেট বা ম্যানেজ করতে পারেন।" },
