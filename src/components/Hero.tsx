@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto  w-full px-6 py-24 sm:py-32 lg:px-8 flex flex-col items-center justify-center text-center">
         <div className="max-w-3xl flex flex-col items-center gap-6">
           <h1 className={`text-2xl md:text-2xl  tracking-tight text-white sm:text-4xl lg:text-5xl drop-shadow-md leading-tight ${kalpana.className}`}>
-            বাংলাদেশ থেকে বিশ্বমানের সফটওয়্যার ডেভেলপমেন্ট
+             বিশ্বমানের সফটওয়্যার ডেভেলপমেন্ট  ও আইটি সলুশন
           </h1>
 
           <p className="max-w-xl text-lg leading-8 text-zinc-300 drop-shadow-sm">

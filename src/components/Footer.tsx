@@ -55,16 +55,16 @@ export default function Footer() {
 
         {/* Column 4: Contact */}
         <div className="flex flex-col gap-4">
-          <h4 className="text-white font-bold text-lg mb-2">যোগাযোগের তথ্য</h4>
-          <p className="flex gap-3 items-start"><span>📍</span> Hakir Mor, Bogura-5800, Bangladesh</p>
-          <p className="flex gap-3 items-center"><span>✉️</span> info@digital-crop.com</p>
-          <p className="flex gap-3 items-center"><span>🎧</span> +8801722447755</p>
+          <h4 className="text-white font-bold text-lg mb-2"> যোগাযোগের তথ্য </h4>
+          <p className="flex gap-3 items-start"><span>📍</span> House # 19, Road # 01, Sector # 06, Uttara, Dhaka, Bangladesh</p>
+          <p className="flex gap-3 items-center"><span>✉️</span> support@softexpertzone.com </p>
+          <p className="flex gap-3 items-center"><span>🎧</span> <a href="tel:+8801722447755"> +8801722447755 </a></p>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="relative z-10 w-full border-t border-zinc-800 py-8 text-center text-sm">
-        <p>Copyright © 2026 Digital-Crop. All Rights Reserved.</p>
+        <p>Copyright © 2026 Soft Expert Zone. All Rights Reserved.</p>
       </div>
     </footer>
   );
