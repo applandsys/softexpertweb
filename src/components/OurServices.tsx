@@ -12,7 +12,7 @@ const services = [
   { src: '/images/services/our services 4.png', category: 'WEBSITE DESIGN & DEVELOPMENT' },
   { src: '/images/services/our services 5.png', category: 'GRAPHICS DESIGN' },
   { src: '/images/services/our services 6.png', category: 'WEBSITE DESIGN & DEVELOPMENT' },
-  { src: '/images/services/our services 1.png', category: 'SEO' },
+  { src: '/images/services/ecommerce.jpg', category: 'WEBSITE DESIGN & DEVELOPMENT' },
   { src: '/images/services/our services 2.png', category: 'SEO' },
   { src: '/images/services/our services 3.png', category: 'GRAPHICS DESIGN' },
 ];

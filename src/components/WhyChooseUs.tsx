@@ -1,14 +1,14 @@
 'use client';
 
-import { Users, Award, DollarSign, Eye, Truck, Headset } from 'lucide-react';
+import { Users, Award, DollarSign, Eye, Truck, Headset  } from 'lucide-react';
 
 const features = [
+  { icon: Headset, title: "Software Development", desc: "আপনার ব্যবসা সুন্দর ভাবে পরিচালনা করার জন্য আমরা যেকোনো ধরনের কাস্টম Software Development সেবা প্রদান করে থাকি।" },
   { icon: Users, title: "Digital Marketing", desc: "অনলাইনে আপনার ব্যবসার প্রচার প্রচারণা করার জন্য ইফেক্টিভ Digital Marketing Service প্রদান করে থাকি। যা আপনার ব্যবসার অনলাইন পরিচিতি ও মুনাফা বাড়াতে সাহায্য করবে।" },
   { icon: Award, title: "Graphic Design", desc: "আমাদের দক্ষ Graphic Design টিম আপনার ব্যবসার জন্য Logo, Banner, Branding, Packaging সহ বিভিন্ন Graphic সেবা প্রদান করে থাকে।" },
   { icon: DollarSign, title: "Search Engine Optimization", desc: "আপনার ওয়েবসাইট কে সার্চ ইঞ্জিনে টপ র‍্যাংক করাতে আমরা দিচ্ছি প্রফেশনাল Search Engine Optimization এর সকল সার্ভিস।" },
   { icon: Eye, title: "Domain & Hosting", desc: "আমরা দিচ্ছি সুপার ফাস্ট, সিকিউর, নির্ভরযোগ্য SSD storage-এ ওয়েব Domain & Hosting রেজিস্ট্রেশন সার্ভিস।" },
-  { icon: Truck, title: "Web Design & Development", desc: "আমরা বিভিন্ন ধরনের Web Design & Development সার্ভিস দিয়ে থাকি। যেমনঃ ব্যবসায়িক, ইকমার্স, পোর্টফোলিও সহ যেকোনো ওয়েবসাইট।" },
-  { icon: Headset, title: "Software Development", desc: "আপনার ব্যবসা সুন্দর ভাবে পরিচালনা করার জন্য আমরা যেকোনো ধরনের কাস্টম Software Development সেবা প্রদান করে থাকি।" },
+  { icon: Truck, title: "Web Design & Development", desc: "আমরা বিভিন্ন ধরনের Web Design & Development সার্ভিস দিয়ে থাকি। যেমনঃ ব্যবসায়িক, ইকমার্স, পোর্টফোলিও সহ যেকোনো ওয়েবসাইট।" }
 ];
 
 export default function WhyChooseUs() {

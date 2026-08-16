@@ -27,10 +27,10 @@ export default function CallToAction() {
 
           {/* Phone Number */}
           <a
-            href="tel:+8801993141214"
+            href="tel:+8801722447755"
             className="text-white font-bold text-lg flex flex-col items-center gap-1 group"
           >
-            <span>+88 01993-141214 🎧</span>
+            <span>+88 01722447755 🎧</span>
             {/* Lighter Underline */}
             <span className="w-full h-[1px] bg-white/40 group-hover:bg-white/70 transition-colors"></span>
           </a>

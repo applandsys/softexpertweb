@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const reviews = [
   { name: "BCS কনফার্ম", role: "owner", text: "বগুড়ার মধ্যে বেস্ট কোয়ালিটির বুস্টিং সার্ভিস আমার মনে হয়। সবচেয়ে বড় কথা সুখে দুঃখে এর ওনার লাভলু ভাইকে আমি পাশে পাই।", avatar: "B" },
   { name: "Wood plan", role: "owner", text: "Good marketing strategy and friendly behavior. Promotion and sales of my business has helped a lot.", avatar: "W" },
-  { name: "Tuki Taki", role: "Owner", text: "Digital Crop বন্ধু সুলভ ও সুদক্ষ মার্কেটিং কৌশল আমার পেজ এর জন্য সহায়ক হয়েছে।", avatar: "T" },
+  { name: "Tuki Taki", role: "Owner", text: "Soft Expert Zone  বন্ধু সুলভ ও সুদক্ষ মার্কেটিং কৌশল আমার পেজ এর জন্য সহায়ক হয়েছে।", avatar: "T" },
   { name: "Tech Solutions", role: "Manager", text: "Excellent services and very professional team. Highly recommended for any business.", avatar: "T" },
 ];
 
