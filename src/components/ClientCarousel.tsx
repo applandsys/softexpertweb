@@ -8,11 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ClientCarousel = () => {
-  const partners = [
-    'akig.png', 'bangal.png', 'citygroup.png', 
-    'code-village.png', 'eShikhon-Logo-2025-04.png', 
-    'natural.png', 'pran.png', 'teer.png'
-  ];
+  const partners = ['akig.png', 'bangal.png', 'citygroup.png', 'code-village.png','natural.png', 'pran.png', 'teer.png'];
 
   const settings = {
     dots: true,

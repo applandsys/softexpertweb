@@ -3,6 +3,16 @@ import Link from "next/link";
 export default function Services() {
     const servicesData = [
         {
+            title: "Web Design & Development",
+            description: "আমরা বিভিন্ন ধরনের Web Design & Development সার্ভিস দিয়ে থাকি। যেমনঃ ব্যবসায়িক, ইকমার্স, পোর্টফোলিও সহ যেকোনো ওয়েবসাইট। যা অনলাইনে আপনার ব্যবসাকে ফুটিয়ে তুলতে এবং আপনার ব্যবসায়িক পরিচিতি বাড়াতে বিশেষ ভুমিকা রাখবে।",
+            href: "#web-development",
+            icon: (
+                <svg className="w-12 h-12 text-indigo-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+            )
+        },
+        {
             title: "Digital Marketing",
             description: "অনলাইনে আপনার ব্যবসার প্রচার প্রচারণা করার জন্য ইফেক্টিভ Digital Marketing Service প্রদান করে থাকি। যা আপনার ব্যবসার অনলাইন পরিচিতি ও মুনাফা বাড়াতে সাহায্য করবে এবং আপনার ব্যবসাকে অনলাইনে সুন্দর ভাবে উপস্থাপন করতে সাহায্য করবে।",
             href: "#digital-marketing",
@@ -45,16 +55,6 @@ export default function Services() {
             )
         },
         {
-            title: "Web Design & Development",
-            description: "আমরা বিভিন্ন ধরনের Web Design & Development সার্ভিস দিয়ে থাকি। যেমনঃ ব্যবসায়িক, ইকমার্স, পোর্টফোলিও সহ যেকোনো ওয়েবসাইট। যা অনলাইনে আপনার ব্যবসাকে ফুটিয়ে তুলতে এবং আপনার ব্যবসায়িক পরিচিতি বাড়াতে বিশেষ ভুমিকা রাখবে।",
-            href: "#web-development",
-            icon: (
-                <svg className="w-12 h-12 text-indigo-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                </svg>
-            )
-        },
-        {
             title: "Software Development",
             description: "আপনার ব্যবসা সুন্দর ভাবে পরিচালনা করার জন্য আমরা যেকোনো ধরনের কাস্টম Software Development সেবা প্রদান করে থাকি। যেমনঃ School Management, Accounting Software, Custom Website Development ইত্যাদি।",
             href: "#software-development",
@@ -73,10 +73,10 @@ export default function Services() {
                 {/* Header Content Wrapper */}
                 <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
                     <h2 className="text-3xl font-extrabold text-slate-900 dark:text-zinc-50 sm:text-4xl tracking-tight">
-                        আমাদের <span className="text-blue-600">Digital Marketing</span> ও <span className="text-teal-600">IT Service</span> সমূহ
+                        আমাদের <span className="text-blue-600">Software Development</span> ও <span className="text-teal-600">IT Service</span> সমূহ
                     </h2>
                     <p className="text-gray-600 dark:text-zinc-400 text-base leading-relaxed">
-                        আপনার ব্যবসার জন্য আমরা দিচ্ছি উন্নতমানের Digital Marketing ও IT সেবাসমূহ। যা আপনার ব্যবসা বৃদ্ধিতে সহায়তা করবে এবং আপনার ব্যবসার অনলাইন উপস্থিতি নিশ্চিত করবে।
+                        আপনার ব্যবসার জন্য আমরা দিচ্ছি উন্নতমানের Web  and Mobile Apps development ,  Digital Marketing ও IT সেবাসমূহ। যা আপনার ব্যবসা বৃদ্ধিতে সহায়তা করবে এবং আপনার ব্যবসার অনলাইন উপস্থিতি নিশ্চিত করবে।
                     </p>
                 </div>
 

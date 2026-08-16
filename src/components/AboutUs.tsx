@@ -26,13 +26,13 @@ export default function AboutUs() {
                         {/* Heading */}
                         <h2 className="text-3xl font-extrabold text-slate-900 dark:text-zinc-50 sm:text-4xl lg:text-5xl tracking-tight leading-tight">
                             Delivering Digital Success <br />
-                            to <span className="text-blue-600">150+ Happy Customers</span>
+                            to <span className="text-blue-600">100+ Happy Customers</span>
                         </h2>
 
                         {/* Paragraph 1 */}
                         <p className="text-gray-600 dark:text-zinc-400 text-sm sm:text-base leading-relaxed text-justify">
                             আপনি কি আপনার ব্যবসাকে ডিজিটাল দুনিয়ায় এগিয়ে নিয়ে যেতে চান? আমরা আপনাকে সাহায্য করতে পারি!
-                            <span className="font-semibold text-slate-800 dark:text-zinc-200"> SoftExpert</span> একটি সমন্বিত Digital Marketing এবং IT Service কোম্পানি যা আপনার ব্যবসার সাফল্যের জন্য প্রয়োজনীয় সমস্ত কিছু সরবরাহ করে থাকে। আমাদের অফিস বগুড়া শহরের হাকিড় মোড়ে অবস্থিত। আমরা বাংলাদেশ সহ বিশ্বের বিভিন্ন দেশে ফ্রিল্যান্সিং প্রজেক্টের মাধ্যমে সুনামের সাথে Marketing ও সকল IT সেবা দিয়ে আসছি। আমাদের দিচ্ছি Digital Marketing, Graphic Design, SEO, Web Design & Development, Domain & Hosting, Software Development ইত্যাদি, যা আপনি আপনার প্রয়োজন অনুসারে নিতে পারেন।
+                            <span className="font-semibold text-slate-800 dark:text-zinc-200"> SoftExpert</span> একটি সমন্বিত Software Development, Digital Marketing এবং IT Service কোম্পানি যা আপনার ব্যবসার সাফল্যের জন্য প্রয়োজনীয় সমস্ত কিছু সরবরাহ করে থাকে। আমাদের অফিস বগুড়া শহরের হাকিড় মোড়ে অবস্থিত। আমরা বাংলাদেশ সহ বিশ্বের বিভিন্ন দেশে ফ্রিল্যান্সিং প্রজেক্টের মাধ্যমে সুনামের সাথে Marketing ও সকল IT সেবা দিয়ে আসছি। আমাদের দিচ্ছি Digital Marketing, Graphic Design, SEO, Web Design & Development, Domain & Hosting, Software Development ইত্যাদি, যা আপনি আপনার প্রয়োজন অনুসারে নিতে পারেন।
                         </p>
 
                         {/* Paragraph 2 */}
@@ -53,7 +53,7 @@ export default function AboutUs() {
 
                             {/* Headset Phone Link */}
                             <a
-                                href="tel:+8801993141214"
+                                href="tel:+8801722447755"
                                 className="inline-flex items-center gap-3 text-lg sm:text-xl font-bold text-blue-700 hover:text-blue-800 transition-colors group"
                             >
                                 {/* Minimal Headset SVG Icon */}
@@ -62,7 +62,7 @@ export default function AboutUs() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-3.394 11.25 11.25 0 1 0-19.482 0A9.094 9.094 0 0 0 6 18.72M18 18.72a9 9 0 0 0-12 0m12 0a2.25 2.25 0 0 1-2.25 2.25H10.5A2.25 2.25 0 0 1 8.25 18.72M12 2.25V4.5m0 0a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
                                     </svg>
                                 </div>
-                                <span>+88 01993-141214</span>
+                                <span>+8801722447755</span>
                             </a>
 
                         </div>
