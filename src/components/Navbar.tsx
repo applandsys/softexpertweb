@@ -56,7 +56,8 @@ export default function Navbar() {
       href: "#products",
       subItems: [
         { label: "ই-কমার্স ওয়েবসাইট", href: "/e-commerce-website" },
-        { label: "ইনেভন্টির ম্যােনজেমন্ট", href: "/inventory-management" }
+        { label: "ইনেভন্টির ম্যােনজেমন্ট", href: "/inventory-management" },
+        { label: "রিটেইল ইআরপি", href: "/retail-erp" }
       ]
     },
     { 
@@ -65,7 +66,9 @@ export default function Navbar() {
       subItems: [
         { label: "ডিজিটাল মার্কেটিং", href: "/digital-marketing" },
         { label: "সফটওয়্যার ডেভেলপমেন্ট", href: "/software-development" },
-        { label: "ল্যান্ডিং পেজ সার্ভিস", href: "/landing-page" }
+        { label: "ওয়েব ডিজাইন ও ডেভেলপমেন্ট", href: "/web-design-development" },
+        { label: "ল্যান্ডিং পেজ সার্ভিস", href: "/landing-page" },
+        { label: "Pixel setup", href: "/pixel-setup" }
       ]
     },
     { label: "আমাদের সম্পর্কে", href: "/about-us" },

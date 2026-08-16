@@ -20,18 +20,20 @@ const EcommerceWebsitePage = () => {
                             আপনার ব্যবসার  Online সমাধান আমাদের  High Tech E-Commerce
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            Digital Crop E-Commerce Website বাংলাদেশের Online উদ্যোক্তা, রিটেইল ব্যবসা ও ব্র্যান্ডের জন্য সম্পূর্ণ Digital সমাধান। প্রোডাক্ট লিস্টিং, কার্ট, অর্ডার, পেমেন্ট ও Customer Management সব এক Platform-এ পরিচালনা করুন।
+                            Soft Expert Zone Ltd. E-Commerce Website বাংলাদেশের Online উদ্যোক্তা, রিটেইল ব্যবসা ও ব্র্যান্ডের জন্য সম্পূর্ণ Digital সমাধান। প্রোডাক্ট লিস্টিং, কার্ট, অর্ডার, পেমেন্ট ও Customer Management সব এক Platform-এ পরিচালনা করুন।
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed">
                             এই E-Commerce Website Design স্থানীয় বাজারের বাস্তব চাহিদা অনুযায়ী তৈরি। Conversion-Focused Layout, নিরাপদ Payment System ও দ্রুত Performance-এর মাধ্যমে বিক্রি বাড়ে। একটি Ready-to-Use E Commerce Website Template হিসেবে এটি ছোট Online Shop থেকে বড় Best E Commerce Website পর্যন্ত সহজেই Scale করা যায়।
                         </p>
                         <div className="flex flex-wrap gap-4 pt-4">
-                            <Link href="#" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition-colors">
+                            <Link href="/portfolio" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition-colors">
                                 ডেমো দেখুন
                             </Link>
-                            <a href="tel:+8801993141214" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
-                                <Phone size={20} />
-                                কল করুন: +88 01993-141214
+                            <a
+                                className="flex h-12 items-center justify-center rounded-none border border-white/40 bg-white/10 backdrop-blur-sm px-8 font-semibold text-white shadow-sm transition-all hover:bg-white/20 hover:border-white/70 min-w-[180px]"
+                                href="tel:+8801722447755"
+                            >
+                                +8801722447755
                             </a>
                         </div>
                     </div>
@@ -184,8 +186,8 @@ const EcommerceWebsitePage = () => {
                         <Link href="#contact" className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
                             যোগাযোগ করুন <ArrowRight size={20} />
                         </Link>
-                        <a href="tel:+8801993141214" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
-                            <Phone size={20} /> +88 01993-141214
+                        <a href="tel:+8801722447755" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
+                            <Phone size={20} /> +88 01722-447755
                         </a>
                     </div>
                 </div>

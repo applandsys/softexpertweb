@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="pl-[60px]">
             <Image 
               src="/logo.svg" 
-              alt="Digital Crop Logo" 
+              alt="Soft Expert Zone Ltd. Logo" 
               width={105} 
               height={50} 
               priority

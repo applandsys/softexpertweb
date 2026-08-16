@@ -1,46 +1,40 @@
-'use client';
-
-import { Users, Award, DollarSign, Eye, Truck, Headset  } from 'lucide-react';
+import { Users, BadgeCheck, DollarSign, Target, Truck, Headset } from 'lucide-react';
 
 const features = [
-  { icon: Headset, title: "Software Development", desc: "আপনার ব্যবসা সুন্দর ভাবে পরিচালনা করার জন্য আমরা যেকোনো ধরনের কাস্টম Software Development সেবা প্রদান করে থাকি।" },
-  { icon: Users, title: "Digital Marketing", desc: "অনলাইনে আপনার ব্যবসার প্রচার প্রচারণা করার জন্য ইফেক্টিভ Digital Marketing Service প্রদান করে থাকি। যা আপনার ব্যবসার অনলাইন পরিচিতি ও মুনাফা বাড়াতে সাহায্য করবে।" },
-  { icon: Award, title: "Graphic Design", desc: "আমাদের দক্ষ Graphic Design টিম আপনার ব্যবসার জন্য Logo, Banner, Branding, Packaging সহ বিভিন্ন Graphic সেবা প্রদান করে থাকে।" },
-  { icon: DollarSign, title: "Search Engine Optimization", desc: "আপনার ওয়েবসাইট কে সার্চ ইঞ্জিনে টপ র‍্যাংক করাতে আমরা দিচ্ছি প্রফেশনাল Search Engine Optimization এর সকল সার্ভিস।" },
-  { icon: Eye, title: "Domain & Hosting", desc: "আমরা দিচ্ছি সুপার ফাস্ট, সিকিউর, নির্ভরযোগ্য SSD storage-এ ওয়েব Domain & Hosting রেজিস্ট্রেশন সার্ভিস।" },
-  { icon: Truck, title: "Web Design & Development", desc: "আমরা বিভিন্ন ধরনের Web Design & Development সার্ভিস দিয়ে থাকি। যেমনঃ ব্যবসায়িক, ইকমার্স, পোর্টফোলিও সহ যেকোনো ওয়েবসাইট।" }
+  { icon: Users, title: "Expert Team", desc: "আমাদের দক্ষ এবং দীর্ঘ অভিজ্ঞতা সম্পূর্ণ টিম রয়েছে যারা আপনার ব্যবসার জন্য সেরা Digital Marketing ও IT সেবা প্রদান করে থাকে।" },
+  { icon: BadgeCheck, title: "Experienced", desc: "Soft Expert Zone Ltd. অফিসিয়াল ভাবে ১০ বছরের অধিক সময় সফলতার সাথে গ্রাহকদের Digital Marketing ও IT সেবাসমূহ প্রদান আসছে।" },
+  { icon: DollarSign, title: "Affordable Price", desc: "আমরা সাশ্রয়ী মূল্যে কাজের Quality বজায় রেখে উন্নতমানের Digital Marketing ও IT সেবা দিয়ে থাকি।" },
+  { icon: Target, title: "Clearness", desc: "আমরা গ্রাহকদের সাথে সম্পূর্ণ স্বচ্ছতার সাথে কাজ করে থাকি এবং তাদের প্রতিটি পদক্ষেপে আপডেট রাখি। যেকোনো ধরনের প্রশ্ন বা পরামর্শের জন্য আমরা সর্বদা প্রস্তুত থাকি।" },
+  { icon: Truck, title: "Fast Delivery", desc: "আমরা দ্রুত এবং দক্ষতার সাথে Quality বজায় রেখে প্রত্যেকটি কাজ সম্পন্ন করে থাকি এবং সঠিক সময়ে প্রজেক্ট ডেলিভার দিয়ে থাকি।" },
+  { icon: Headset, title: "24/7 customer support", desc: "আমরা 24/7 সহায়তা প্রদান করি এবং আমাদের গ্রাহকদের প্রশ্ন ও সমস্যার দ্রুত সমাধান করি। আমাদের দক্ষ টিম আপনাদের সমস্যা সমাধানের জন্য সর্বদা প্রস্তুত।" }
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-zinc-950 text-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-20 border-t border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         
-        {/* Headline Centered above the cards */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             কেন Soft Expert Zone Ltd. কে বেছে নিবেন?
           </h2>
           <div className="w-20 h-1 bg-teal-500 mx-auto mt-4 rounded-full"></div>
         </div>
-        
+
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-l border-t border-gray-100">
           {features.map((item, index) => (
             <div 
               key={index} 
-              className="bg-zinc-900 p-8 border border-zinc-800 rounded-lg hover:border-zinc-700 transition-colors"
+              className="p-10 border-r border-b border-gray-100 flex flex-col items-center text-center bg-white hover:bg-gray-50 transition-colors"
             >
-              <div className="mb-6">
-                <item.icon size={40} className="text-teal-500" />
+              <div className="mb-6 w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center">
+                <item.icon size={36} className="text-teal-600" />
               </div>
-              <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed mb-6">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">{item.title}</h3>
+              <p className="text-gray-500 text-sm md:text-base leading-relaxed">
                 {item.desc}
               </p>
-              <a href="#" className="text-teal-400 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                বিস্তারিত দেখুন →
-              </a>
             </div>
           ))}
         </div>

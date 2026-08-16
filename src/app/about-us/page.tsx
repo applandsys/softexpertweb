@@ -28,13 +28,13 @@ const AboutUsPage = () => {
                     <div className="flex-1 space-y-6">
                         <span className="text-blue-600 font-semibold uppercase tracking-wider">SoftExpert.com</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                            Digital Marketing এবং IT Service প্রদানকারী প্রতিষ্ঠান
+                            Software Development , Digital Marketing এবং IT Service প্রদানকারী প্রতিষ্ঠান
                         </h2>
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            বর্তমান ডিজিটাল যুগে অনলাইন উপস্থিতি একটি ব্যবসার সাফল্যের জন্য অপরিহার্য। <b>SoftExpert</b> একটি অভিজ্ঞ Digital Marketing এবং IT Service প্রদানকারী প্রতিষ্ঠান। আমরা আমাদের দক্ষতা ও অভিজ্ঞতাকে কাজে লাগিয়ে আপনার ব্যবসাকে অনলাইনে সাফল্যের শীর্ষে পৌঁছে দিতে সর্বদা প্রস্তুত।
+                            বর্তমান ডিজিটাল যুগে অনলাইন উপস্থিতি একটি ব্যবসার সাফল্যের জন্য অপরিহার্য। <b>SoftExpert</b> একটি অভিজ্ঞ Software Development , Automation , Digital Marketing এবং IT Service প্রদানকারী প্রতিষ্ঠান। আমরা আমাদের দক্ষতা ও অভিজ্ঞতাকে কাজে লাগিয়ে আপনার ব্যবসাকে অনলাইনে সাফল্যের শীর্ষে পৌঁছে দিতে সর্বদা প্রস্তুত।
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            <b>১০+ বছরের </b>অভিজ্ঞতা এবং দক্ষ প্রফেশনাল টিমের সমন্বয়ে গঠিত <b>SoftExpert</b>। আপনার নির্দিষ্ট প্রয়োজনের উপর ভিত্তি করে আমরা কাস্টমাইজড সমাধান প্রদান করে থাকি। আমরা লোকাল এবং ফ্রিল্যান্সিং প্রজেক্টের মাধ্যমে দেশ-বিদেশে উন্নতমানের Digital Marketing এবং IT Solution পরিসেবা প্রদান করে আসছি। ছোট থেকে মাঝারি, মাঝারি থেকে বড় সব ধরনের ব্যবসা প্রতিষ্ঠান বা ব্যক্তিদেরকে নায্য মূল্যে উন্নতমানের Digital Marketing এবং IT Service প্রদানে আমাদের সুখ্যাতি রয়েছে। আপনার ব্যবসাকে Digitalized করতে A to Z সমাধান প্রদান করতে আমরা সদা প্রস্তুত।
+                            <b>১6+ বছরের </b>অভিজ্ঞতা এবং দক্ষ প্রফেশনাল টিমের সমন্বয়ে গঠিত <b>SoftExpert</b>। আপনার নির্দিষ্ট প্রয়োজনের উপর ভিত্তি করে আমরা কাস্টমাইজড সমাধান প্রদান করে থাকি। আমরা লোকাল এবং ফ্রিল্যান্সিং প্রজেক্টের মাধ্যমে দেশ-বিদেশে উন্নতমানের Digital Marketing এবং IT Solution পরিসেবা প্রদান করে আসছি। ছোট থেকে মাঝারি, মাঝারি থেকে বড় সব ধরনের ব্যবসা প্রতিষ্ঠান বা ব্যক্তিদেরকে নায্য মূল্যে উন্নতমানের Digital Marketing এবং IT Service প্রদানে আমাদের সুখ্যাতি রয়েছে। আপনার ব্যবসাকে Digitalized করতে A to Z সমাধান প্রদান করতে আমরা সদা প্রস্তুত।
                         </p>
                         
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -61,9 +61,9 @@ const AboutUsPage = () => {
                             <Link href="/contact-us" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition-colors">
                                 যোগাযোগ করুন
                             </Link>
-                            <a href="tel:+8801993141214" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
+                            <a href="tel:+8801722447755" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
                                 <Phone size={20} />
-                                +88 01993-141214
+                                +88 01722-447755
                             </a>
                         </div>
                     </div>
@@ -123,10 +123,10 @@ const AboutUsPage = () => {
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
-                            { name: "Abu Hasan Lavlu", role: "Digital Marketer", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" },
-                            { name: "Moshiur Rahman", role: "Full Stack Developer", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop" },
-                            { name: "Md. Samsuddoha", role: "SEO Specialist", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" },
-                            { name: "Mamunur Rashid", role: "SEO & Social Media Marketer", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop" }
+                            { name: "Kazi Ahmad Moin Uddin", role: "CEO", image: "/images/team/KaziAhmadMoinUddin.jpeg" },
+                            { name: "Tarique Mosharraf", role: "Tech Lead", image: "/images/team/TariqueMosharraf.jpg" },
+                            { name: "Joyto Noyan Sarker", role: "SEO Specialist", image: "/images/team/JoytoNoyanSarker.jpg" },
+                            { name: "Tamim Mosharraf", role: "Creative Director", image: "/images/team/TamimMosharraf.jpg" }
                         ].map((member, idx) => (
                             <div key={idx} className="text-center group">
                                 <div className="relative mb-6 overflow-hidden rounded-xl bg-gray-100 mx-auto max-w-[250px]">
@@ -154,8 +154,8 @@ const AboutUsPage = () => {
                         <Link href="/contact-us" className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
                             যোগাযোগ করুন <ArrowRight size={20} />
                         </Link>
-                        <a href="tel:+8801993141214" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
-                            <Phone size={20} /> +88 01993-141214
+                        <a href="tel:+8801722447755" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
+                            <Phone size={20} /> +88 01722-447755
                         </a>
                     </div>
                 </div>

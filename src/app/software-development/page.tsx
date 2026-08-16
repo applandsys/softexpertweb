@@ -31,7 +31,7 @@ const SoftwareDevelopmentPage = () => {
                             আপনার ব্যবসার জন্য প্রয়োজনীয় সকল Software Development Service এখানেই!
                         </h2>
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            আপনার ব্যবসার জন্য অপরিহার্য <b>Software Development Service</b> এখন আপনার হাতের মুঠোয়! Digital Crop আপনার ব্যবসার চাহিদা পূরণের লক্ষ্যে সকল প্রকার উন্নতমানের Software Development সেবা প্রদান করছে। সফটওয়্যার ব্যবহারের মাধ্যমে আপনার ব্যবসায়িক কার্যক্রম স্বয়ংক্রিয় ও দক্ষ হয়, সময় ও অর্থের সাশ্রয় হয়, এবং সঠিক ও নিরাপদ ডেটা ব্যবস্থাপনা নিশ্চিত হয়।
+                            আপনার ব্যবসার জন্য অপরিহার্য <b>Software Development Service</b> এখন আপনার হাতের মুঠোয়! Soft Expert Zone Ltd. আপনার ব্যবসার চাহিদা পূরণের লক্ষ্যে সকল প্রকার উন্নতমানের Software Development সেবা প্রদান করছে। সফটওয়্যার ব্যবহারের মাধ্যমে আপনার ব্যবসায়িক কার্যক্রম স্বয়ংক্রিয় ও দক্ষ হয়, সময় ও অর্থের সাশ্রয় হয়, এবং সঠিক ও নিরাপদ ডেটা ব্যবস্থাপনা নিশ্চিত হয়।
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed">
                             আমাদের অভিজ্ঞ ডেভেলপার টিম আপনার ব্যবসার নির্দিষ্ট চাহিদা বিশ্লেষণ করে, সেই অনুযায়ী <b>Customized Software</b> তৈরী করে দিয়ে থাকে। আমাদের সেবার মধ্যে রয়েছে <b>Web Application Development, Mobile App Development, Cloud Solutions, and System Integration.</b> আমরা প্রতিটি প্রোজেক্টে গ্রাহকের সঙ্গে নিবিড়ভাবে কাজ করি।
@@ -40,9 +40,9 @@ const SoftwareDevelopmentPage = () => {
                             <Link href="/contact-us" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition-colors">
                                 যোগাযোগ করুন
                             </Link>
-                            <a href="tel:+8801993141214" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
+                            <a href="tel:+8801722447755" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
                                 <Phone size={20} />
-                                +88 01993-141214
+                                +88 01722-447755
                             </a>
                         </div>
                     </div>
@@ -149,8 +149,8 @@ const SoftwareDevelopmentPage = () => {
                         <Link href="/contact-us" className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
                             যোগাযোগ করুন <ArrowRight size={20} />
                         </Link>
-                        <a href="tel:+8801993141214" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
-                            <Phone size={20} /> +88 01993-141214
+                        <a href="tel:+8801722447755" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
+                            <Phone size={20} /> +88 01722-447755
                         </a>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import ContactForm from '@/components/ContactForm';
 
 const ContactUsPage = () => {
     return (
@@ -82,43 +83,7 @@ const ContactUsPage = () => {
                             </p>
                         </div>
                         
-                        <form className="space-y-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <input type="text" placeholder="আপনার নাম" required className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors" />
-                                </div>
-                                <div>
-                                    <input type="tel" placeholder="আপনার মোবাইল নাম্বার" required className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors" />
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <input type="email" placeholder="আপনার ইমেইল এড্রেস" required className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors" />
-                                </div>
-                                <div>
-                                    <select defaultValue="" required className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors bg-white text-gray-700">
-                                        <option value="" disabled>আপনি কোন সেবাটি নিতে চাচ্ছেন?</option>
-                                        <option value="ল্যান্ডিং পেজ সার্ভিস">ল্যান্ডিং পেজ সার্ভিস</option>
-                                        <option value="ভিডিও এডিটিং">ভিডিও এডিটিং</option>
-                                        <option value="ডিজিটাল মার্কেটিং">ডিজিটাল মার্কেটিং</option>
-                                        <option value="গ্রাফিক্স ডিজাইন">গ্রাফিক্স ডিজাইন</option>
-                                        <option value="সার্চ ইঞ্জিন অপটিমাইজেশন">সার্চ ইঞ্জিন অপটিমাইজেশন</option>
-                                        <option value="ডোমেইন ও হোস্টিং">ডোমেইন ও হোস্টিং</option>
-                                        <option value="ওয়েবসাইট ডিজাইন এন্ড ডেভেলপমেন্ট">ওয়েবসাইট ডিজাইন এন্ড ডেভেলপমেন্ট</option>
-                                        <option value="সফটওয়্যার ডেভেলপমেন্ট">সফটওয়্যার ডেভেলপমেন্ট</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div>
-                                <textarea rows={6} placeholder="আপনার মেসেজ" required className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors resize-none"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded transition-colors flex items-center justify-center gap-2">
-                                    <Send size={20} />
-                                    বার্তা পাঠান
-                                </button>
-                            </div>
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </section>

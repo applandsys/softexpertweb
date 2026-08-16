@@ -12,7 +12,7 @@ export default function HeroLanding() {
               <h1 className="text-4xl font-bold leading-normal">E-Commerce Website Bangladesh -ই-কমার্স ওয়েবসাইট</h1>
                <div className="my-4">
                    <p className="my-4 tex-xl leading-relaxed">
-                       Digital Crop E-Commerce Website বাংলাদেশের Online উদ্যোক্তা, রিটেইল ব্যবসা ও ব্র্যান্ডের জন্য সম্পূর্ণ Digital সমাধান। প্রোডাক্ট লিস্টিং, কার্ট, অর্ডার, পেমেন্ট ও Customer Management সব এক Platform-এ পরিচালনা করুন।
+                       Soft Expert Zone E-Commerce Website বাংলাদেশের Online উদ্যোক্তা, রিটেইল ব্যবসা ও ব্র্যান্ডের জন্য সম্পূর্ণ Digital সমাধান। প্রোডাক্ট লিস্টিং, কার্ট, অর্ডার, পেমেন্ট ও Customer Management সব এক Platform-এ পরিচালনা করুন।
 
                    </p>
                    <p className="leading-relaxed">
@@ -21,7 +21,12 @@ export default function HeroLanding() {
                </div>
                <div className="flex items-center justify-left w-full gap-4">
                    <Button variant="secondary" className="text-lg p-4 font-semibold">ডেমো দেখুন</Button>
-                   <Button variant="secondary" className="text-lg p-4 font-semibold">Call +880158888 </Button>
+                   <Button variant="secondary" className="text-lg p-4 font-semibold">Call  <a
+                       className="flex h-12 items-center justify-center rounded-none border border-white/40 bg-white/10 backdrop-blur-sm px-8 font-semibold text-white shadow-sm transition-all hover:bg-white/20 hover:border-white/70 min-w-[180px]"
+                       href="tel:+8801722447755"
+                   >
+                       +8801722447755
+                   </a></Button>
                </div>
            </div>
           <div className="ml-24 text-center">

@@ -25,10 +25,10 @@ export default function CallToAction() {
 
                     {/* Phone Number Link */}
                     <a
-                        href="tel:+8801993141214"
+                        href="tel:+8801722447755"
                         className="flex items-center gap-2 text-white font-semibold text-lg md:text-xl border-b-2 border-white/80 pb-1 hover:border-white transition-colors tracking-wider whitespace-nowrap"
                     >
-                        +88 01993-141214
+                        +88 01722-447755
                         <Headphones className="w-5 h-5 stroke-[2] inline-block" />
                     </a>
 

@@ -23,9 +23,9 @@ const InventoryManagementPage = () => {
                             <Link href="#" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition-colors">
                                 ডেমো দেখুন
                             </Link>
-                            <a href="tel:+8801993141214" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
+                            <a href="tel:+8801722447755" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded font-medium transition-colors flex items-center gap-2">
                                 <Phone size={20} />
-                                কল করুন: +88 01993-141214
+                                কল করুন: +88 01722-447755
                             </a>
                         </div>
                     </div>
@@ -113,8 +113,8 @@ const InventoryManagementPage = () => {
                         <Link href="#contact" className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
                             যোগাযোগ করুন <ArrowRight size={20} />
                         </Link>
-                        <a href="tel:+8801993141214" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
-                            <Phone size={20} /> +88 01993-141214
+                        <a href="tel:+8801722447755" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
+                            <Phone size={20} /> +88 01722-447755
                         </a>
                     </div>
                 </div>
