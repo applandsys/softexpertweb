@@ -29,6 +29,9 @@ const EcommerceWebsitePage = () => {
                             <Link href="/portfolio" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-medium transition-colors">
                                 ডেমো দেখুন
                             </Link>
+                            <Link href="/contact-us" className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3 rounded font-medium transition-colors">
+                                যোগাযোগ করুন
+                            </Link>
                             <a
                                 className="flex h-12 items-center justify-center rounded-none border border-white/40 bg-white/10 backdrop-blur-sm px-8 font-semibold text-white shadow-sm transition-all hover:bg-white/20 hover:border-white/70 min-w-[180px]"
                                 href="tel:+8801722447755"
@@ -183,7 +186,7 @@ const EcommerceWebsitePage = () => {
                 <div className="max-w-4xl mx-auto text-center space-y-8">
                     <h2 className="text-3xl md:text-4xl font-bold leading-tight">আপনার ব্যবসার জন্য একটি ওয়েবসাইট তৈরি করার জন্য এখনি যোগাযোগ করুন।</h2>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="#contact" className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
+                        <Link href="/contact-us" className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">
                             যোগাযোগ করুন <ArrowRight size={20} />
                         </Link>
                         <a href="tel:+8801722447755" className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded font-bold transition-colors flex items-center gap-2">

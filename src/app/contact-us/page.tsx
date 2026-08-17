@@ -29,9 +29,9 @@ const ContactUsPage = () => {
                         <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                             <Phone size={32} />
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">মোবাইল নাম্বার</h3>
+                        <h3 className="text-xl font-bold text-gray-900 mb-3">মোবাইল নাম্বার / Whatsapp </h3>
                         <a href="tel:+8801837664478" className="text-blue-600 font-medium hover:underline text-lg">
-                            +8801837664478
+                            +8801722447755
                         </a>
                     </div>
                     
