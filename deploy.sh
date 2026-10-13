@@ -2,7 +2,7 @@
 set -e
 
 echo "=== Pulling latest changes from Git ==="
-git pull origin main
+git pull origin master || git pull origin main || git pull
 
 echo "=== Building and restarting Docker containers ==="
 docker compose up -d --build

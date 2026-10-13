@@ -6,9 +6,9 @@ FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Copy dependency files
-COPY package.json package-lock.json ./
-RUN npm ci
+# Copy dependency files (using wildcard so it doesn't fail if a lockfile is missing)
+COPY package.json package-lock.json* yarn.lock* pnpm-lock.yaml* ./
+RUN npm install --legacy-peer-deps
 
 # 2. Rebuild the source code only when needed
 FROM base AS builder
