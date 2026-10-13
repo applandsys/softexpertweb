@@ -2,33 +2,28 @@
 set -e
 
 echo "=========================================================="
-echo "1. Checking all existing 301 redirects in /etc/nginx/"
+echo "1. Rebuilding Docker container with latest Dockerfile"
 echo "=========================================================="
-grep -rn "301" /etc/nginx/ || echo "No 301 found in /etc/nginx"
+cd /var/www/softexpertweb
+docker compose up -d --build
 
 echo ""
 echo "=========================================================="
-echo "2. Detecting Let's Encrypt SSL certificate path"
+echo "2. Testing Port 3000 directly from inside server"
 echo "=========================================================="
-CERT_PATH=$(ls -d /etc/letsencrypt/live/softexpertzone.com* 2>/dev/null | head -n 1)
-if [ -z "$CERT_PATH" ]; then
-    echo "ERROR: SSL certificate folder for softexpertzone.com not found!"
-    ls -la /etc/letsencrypt/live/ || true
-    exit 1
-fi
-echo "Found SSL certificate in: $CERT_PATH"
+curl -I http://127.0.0.1:3000/e-commerce-website || echo "PORT 3000 COULD NOT BE REACHED"
 
 echo ""
 echo "=========================================================="
-echo "3. Cleaning old/conflicting files in sites-enabled and conf.d"
+echo "3. Removing any old conflicting files in Nginx"
 echo "=========================================================="
 rm -f /etc/nginx/sites-enabled/*
 rm -f /etc/nginx/conf.d/*.conf
+rm -f /etc/nginx/sites-available/softexpertzone.com.conf
 
-echo ""
-echo "=========================================================="
-echo "4. Deploying clean softexpertzone.conf"
-echo "=========================================================="
+CERT_PATH=$(ls -d /etc/letsencrypt/live/softexpertzone.com* 2>/dev/null | head -n 1)
+echo "SSL cert: $CERT_PATH"
+
 cp softexpertzone.conf /etc/nginx/sites-available/softexpertzone.conf
 sed -i "s|/etc/letsencrypt/live/softexpertzone.com/fullchain.pem|$CERT_PATH/fullchain.pem|g" /etc/nginx/sites-available/softexpertzone.conf
 sed -i "s|/etc/letsencrypt/live/softexpertzone.com/privkey.pem|$CERT_PATH/privkey.pem|g" /etc/nginx/sites-available/softexpertzone.conf
@@ -37,24 +32,25 @@ ln -sf /etc/nginx/sites-available/softexpertzone.conf /etc/nginx/sites-enabled/s
 
 echo ""
 echo "=========================================================="
-echo "5. Testing Nginx syntax"
+echo "4. Testing Nginx syntax and restarting"
 echo "=========================================================="
 nginx -t
-
-echo ""
-echo "=========================================================="
-echo "6. Restarting Nginx"
-echo "=========================================================="
 systemctl restart nginx
 
 echo ""
 echo "=========================================================="
-echo "7. Ensuring Docker container is up on port 3000"
+echo "5. Testing HTTP (Port 80) via localhost"
 echo "=========================================================="
-docker compose up -d
+curl -I -H "Host: softexpertzone.com" http://127.0.0.1/e-commerce-website || true
 
 echo ""
 echo "=========================================================="
-echo "8. Testing live curl response from local server"
+echo "6. Testing HTTPS (Port 443) via localhost"
+echo "=========================================================="
+curl -k -I -H "Host: softexpertzone.com" https://127.0.0.1/e-commerce-website || true
+
+echo ""
+echo "=========================================================="
+echo "7. Testing full domain curl"
 echo "=========================================================="
 curl -IL https://softexpertzone.com/e-commerce-website
